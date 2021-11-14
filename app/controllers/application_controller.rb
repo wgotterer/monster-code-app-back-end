@@ -8,8 +8,11 @@ class ApplicationController < Sinatra::Base
     { message: "Good luck with your project!" }.to_json
   end
 
-  # post '/users' do
-  #   binding.pry
-  # end
+  post '/users' do
+    User.create(
+      name: params[:name],
+      avatar_id: params[:avatar_id]
+    )
+  end
 
 end
