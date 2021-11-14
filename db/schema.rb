@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 2021_11_14_160600) do
 
   create_table "levels", force: :cascade do |t|
     t.string "name"
-    t.integer "user_id"
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -37,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_11_14_160600) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "avatar_id"
+    t.integer "level_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

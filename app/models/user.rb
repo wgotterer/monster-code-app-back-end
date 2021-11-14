@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
    belongs_to :avatar
-   has_many :levels
+   belongs_to :level
    
   end
