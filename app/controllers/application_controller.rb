@@ -14,5 +14,16 @@ class ApplicationController < Sinatra::Base
       avatar_id: params[:avatar_id]
     )
   end
+  
+  get "/avatars" do 
+    Avatar.all.to_json
+  end
 
+  get "/levels" do 
+    Level.all.to_json
+  end
+
+  get "/questions" do
+    Question.all.to_json
+  end
 end
