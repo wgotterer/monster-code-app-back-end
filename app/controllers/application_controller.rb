@@ -9,12 +9,15 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/users' do
-    User.create(
+    user = User.create(
       name: params[:name],
       avatar_id: params[:avatar_id]
     )
+    user.to_json
   end
-  
+  get '/users' do
+    User.all.to_json
+  end
   get "/avatars" do 
     Avatar.all.to_json
   end
