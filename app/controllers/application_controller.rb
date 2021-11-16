@@ -33,6 +33,11 @@ class ApplicationController < Sinatra::Base
     user.to_json(include: :avatar)
   end
 
+  get "/levels/monster/:id" do
+    level = Level.find(params[:id])
+    level.to_json(include: :monsters)
+  end
+
   get "/levels/questions/:id" do
     level = Level.find(params[:id])
     level.to_json(include: :questions)
