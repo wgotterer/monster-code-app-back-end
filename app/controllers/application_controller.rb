@@ -11,7 +11,8 @@ class ApplicationController < Sinatra::Base
   post '/users' do
     user = User.create(
       name: params[:name],
-      avatar_id: params[:avatar_id]
+      avatar_id: params[:avatar_id],
+      level_id: params[:level_id]
     )
     user.to_json
   end
@@ -22,11 +23,22 @@ class ApplicationController < Sinatra::Base
     Avatar.all.to_json
   end
 
-  get "/levels" do 
-    Level.all.to_json
+  get "/levels/:id" do 
+    level = Level.find(params[:id])
+    level.to_json(include: :users)
   end
 
-  get "/questions" do
-    Question.all.to_json
+  get "/user/current" do
+    user = User.last
+    user.to_json(include: :avatar)
+  end
+
+  get "/levels/questions/:id" do
+    level = Level.find(params[:id])
+    level.to_json(include: :questions)
+  end
+
+  get "/users/last" do 
+    User.last.to_json
   end
 end

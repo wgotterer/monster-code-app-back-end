@@ -1,9 +1,16 @@
 puts "Deleting data..."
 Avatar.destroy_all
+Avatar.reset_pk_sequence
 User.destroy_all
+User.reset_pk_sequence
 Level.destroy_all
+Level.reset_pk_sequence
 Question.destroy_all
+Question.reset_pk_sequence
 Monster.destroy_all
+Monster.reset_pk_sequence
+
+
 
 puts "🌱 Seeding stuff..."
 
