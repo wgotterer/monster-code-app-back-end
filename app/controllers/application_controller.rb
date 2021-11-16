@@ -28,6 +28,7 @@ class ApplicationController < Sinatra::Base
     level.to_json(include: :users)
   end
 
+
   get "/user/current" do
     user = User.last
     user.to_json(include: :avatar)
@@ -38,6 +39,10 @@ class ApplicationController < Sinatra::Base
     level.to_json(include: :monsters)
   end
 
+  get "/monsters" do
+    Monster.all.to_json
+  end
+
   get "/levels/questions/:id" do
     level = Level.find(params[:id])
     level.to_json(include: :questions)
@@ -45,5 +50,18 @@ class ApplicationController < Sinatra::Base
 
   get "/users/last" do 
     User.last.to_json
+  end
+
+  patch "/users/last" do 
+    user = User.last
+    user.update(
+      level_id: params[:level_id]
+    )
+    user.to_json
+  end
+
+  get "/user/level/monster/:id" do
+    level = Level.find(params[:id])
+    level.to_json(include: :monsters)
   end
 end
