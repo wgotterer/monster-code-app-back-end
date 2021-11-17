@@ -15,11 +15,11 @@ Monster.reset_pk_sequence
 puts "🌱 Seeding stuff..."
 
 # avatars
-wizard = Avatar.create(image_url:"https://i.pinimg.com/originals/32/77/bc/3277bc83ceab26ba47b99e2d1d1097fb.jpg", name:"Wizard")
-beetlejuice = Avatar.create(image_url:"https://cdn.vox-cdn.com/thumbor/C-puGOF5dt6L74HipMA6k4k3XlU=/60x0:1140x720/1400x1400/filters:focal(60x0:1140x720):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/49663815/timburton.0.0.jpg", name:"Beetlejuice")
-dino = Avatar.create(image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPMOp_3rq4S5hEbG2L5PFXukkR0A4W4FuSQ&usqp=CAU", name:"Dino")
-rock = Avatar.create(image_url:"http://cdn.shopify.com/s/files/1/1064/4298/products/Rock_Face-_Happy_grande.jpg?v=1489345676", name:"Happy Rock")
-airplane = Avatar.create(image_url:"https://w7.pngwing.com/pngs/607/226/png-transparent-airplane-cartoon-plane-creative-train-marine-mammal-photography-decoupage.png", name:"Airplane")
+wizard = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/wizard.png", name:"Wizard", meta:"Wizard Stewart - Born 1575 AD", description:"This Wizard is a total gangster.  He killed Merlin and shit. A wizard is also known as a enchanter/enchantress, mage, magic-user, sorcerer/sorceress, spell-caster, warlock, witch, or magician, is someone who uses or practices magic derived from supernatural, occult, or arcane sources.")
+beetlejuice = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/beetlejuice.png", name:"Beetlejuice", meta:"Beetlejuice - Born 1988 AD", description:"Beetlejuice Beetlejuice Beetlejuice")
+dino = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/dino.png", name:"Dino", meta: "Rex - Born in 500,000 BC", description:"Dino is a genus of tyrannosaurid theropod dinosaur. The species Tyrannosaurus rex (rex meaning king in Latin), often called T. rex or colloquially T-Rex, is one of the best represented of these large theropods. Tyrannosaurus lived throughout what is now western North America, on what was then an island continent known as Laramidia.")
+rock = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/happyrock.png", name:"Happy Rock", meta: "Happy Rock - Born Never", description:"blah blah blah blah blah blah blah blah blah blah blah blah blah blah rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock")
+airplane = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/plane.png", name:"Airplane", meta: "Airplane - Established 1903", description:"An airplane is a fixed-wing aircraft that is propelled forward by thrust from a jet engine, propeller, or rocket engine. Airplanes come in a variety of sizes, shapes, and wing configurations. The broad spectrum of uses for airplanes includes recreation, transportation of goods and people, military, and research.")
 
 # levels
 
@@ -64,11 +64,11 @@ questionFifteen = Question.create(level_id: levelFive.id, question:"What is ques
 
 # monsters
 
-monsterOne = Monster.create(name:"Smiley", image_url: "https://media.istockphoto.com/vectors/funny-cartoon-monster-vector-id853871352", level_id:levelOne.id)
-monsterTwo = Monster.create(name:"Hungry Broccoli", image_url: "https://media.istockphoto.com/vectors/broccoli-monster-gmo-mutant-angry-vegetable-with-teeth-hungry-alien-vector-id1184217695", level_id:levelTwo.id)
-monsterThree = Monster.create(name:"Boot", image_url: "https://image.shutterstock.com/image-vector/vector-illustration-monster-boots-260nw-205434367.jpg", level_id:levelThree.id)
-monsterFour = Monster.create(name:"Zombie Pigeon", image_url: "https://c8.alamy.com/comp/2FMYCY5/zombie-pigeon-isolated-dove-revived-dead-monster-2FMYCY5.jpg", level_id:levelFour.id)
-monsterFive = Monster.create(name:"Baby", image_url: "https://www.crushpixel.com/big-static18/preview4/virus-baby-monster-funny-spooky-2782406.jpg", level_id:levelFive.id)
+monsterOne = Monster.create(name:"Smiley", image_url: "http://jahprovides.xyz/wp-content/uploads/2021/11/smiley-1.png", level_id:levelOne.id)
+monsterTwo = Monster.create(name:"Hungry Broccoli", image_url: "http://jahprovides.xyz/wp-content/uploads/2021/11/broc.png", level_id:levelTwo.id)
+monsterThree = Monster.create(name:"Boot", image_url: "http://jahprovides.xyz/wp-content/uploads/2021/11/shoemonster.png", level_id:levelThree.id)
+monsterFour = Monster.create(name:"Zombie Pigeon", image_url: "http://jahprovides.xyz/wp-content/uploads/2021/11/pigeonbro.png", level_id:levelFour.id)
+monsterFive = Monster.create(name:"Baby", image_url: "http://jahprovides.xyz/wp-content/uploads/2021/11/babymonster.png", level_id:levelFive.id)
 
 
 

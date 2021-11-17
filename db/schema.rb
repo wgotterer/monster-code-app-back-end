@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 2021_11_14_160600) do
   create_table "avatars", force: :cascade do |t|
     t.string "image_url"
     t.string "name"
+    t.string "meta"
+    t.string "description"
   end
 
   create_table "levels", force: :cascade do |t|
