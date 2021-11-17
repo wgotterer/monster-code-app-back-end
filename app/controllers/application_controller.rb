@@ -64,4 +64,10 @@ class ApplicationController < Sinatra::Base
     level = Level.find(params[:id])
     level.to_json(include: :monsters)
   end
+
+  get "/users/ordered" do
+    users = User.all.order(level_id: :desc)
+    users.to_json
+  end
+
 end
