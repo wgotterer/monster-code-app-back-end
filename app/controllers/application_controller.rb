@@ -65,8 +65,9 @@ class ApplicationController < Sinatra::Base
     level.to_json(include: :monsters)
   end
 
-  get '/users/order' do
-    users = User.all.sort(&:level_id)
+  get "/users/ordered" do
+    users = User.all.order(level_id: :desc)
     users.to_json
   end
+
 end
