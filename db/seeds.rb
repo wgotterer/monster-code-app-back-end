@@ -15,11 +15,11 @@ Monster.reset_pk_sequence
 puts "🌱 Seeding stuff..."
 
 # avatars
-wizard = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/wizard.png", name:"Wizard", meta:"Wizard Stewart - Born 1575 AD", description:"This Wizard is a total gangster.  He killed Merlin and shit. A wizard is also known as a enchanter/enchantress, mage, magic-user, sorcerer/sorceress, spell-caster, warlock, witch, or magician, is someone who uses or practices magic derived from supernatural, occult, or arcane sources.")
+wizard = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/wizard.png", name:"Wizard", meta:"Wizard Stewart - Born 1575 AD", description:"This Wizard has style.  He killed Merlin and shit. A wizard is also known as a enchanter/enchantress, mage, magic-user, sorcerer/sorceress, spell-caster, warlock, witch, or magician, is someone who uses or practices magic derived from supernatural, occult, or arcane sources.")
 beetlejuice = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/beetlejuice.png", name:"Beetlejuice", meta:"Beetlejuice - Born 1988 AD", description:"Beetlejuice Beetlejuice Beetlejuice")
 dino = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/dino.png", name:"Dino", meta: "Rex - Born in 500,000 BC", description:"Dino is a genus of tyrannosaurid theropod dinosaur. The species Tyrannosaurus rex (rex meaning king in Latin), often called T. rex or colloquially T-Rex, is one of the best represented of these large theropods. Tyrannosaurus lived throughout what is now western North America, on what was then an island continent known as Laramidia.")
-rock = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/happyrock.png", name:"Happy Rock", meta: "Happy Rock - Born Never", description:"blah blah blah blah blah blah blah blah blah blah blah blah blah blah rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock rock")
-airplane = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/plane.png", name:"Airplane", meta: "Airplane - Established 1903", description:"An airplane is a fixed-wing aircraft that is propelled forward by thrust from a jet engine, propeller, or rocket engine. Airplanes come in a variety of sizes, shapes, and wing configurations. The broad spectrum of uses for airplanes includes recreation, transportation of goods and people, military, and research.")
+rock = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/happyrock.png", name:"Happy Rock", meta: "Happy Rock - Born Never", description:"The happiest of paper weights.")
+airplane = Avatar.create(image_url:"http://jahprovides.xyz/wp-content/uploads/2021/11/plane.png", name:"Airplane", meta: "Airplane - Established 1903", description:" Brrrrrrumm Brruuummm. I've been told I have a gentle gaze.")
 
 # levels
 
