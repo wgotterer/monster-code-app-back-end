@@ -34,33 +34,33 @@ userOne = User.create(name:"The First", avatar_id: wizard.id, level_id: levelOne
 
 # level one questions
 questionOne = Question.create(level_id: levelOne.id, question:"What variable cannot be reassigned in javaScript?", answer:"const")
-questionTwo = Question.create(level_id: levelOne.id, question:"What is question 2?", answer:"const")
-questionThree = Question.create(level_id: levelOne.id, question:"What is question 3?", answer:"const")
+questionTwo = Question.create(level_id: levelOne.id, question:"true or false? The external JavaScript file must contain the <script> tag", answer:"false")
+questionThree = Question.create(level_id: levelOne.id, question:"What is the DOM?", answer:"document object model")
 
 # level 2 questions
 
-questionFour = Question.create(level_id: levelTwo.id, question:"What is question 4?", answer:"const")
-questionFive = Question.create(level_id: levelTwo.id, question:"What is question 5?", answer:"const")
-questionSix = Question.create(level_id: levelTwo.id, question:"What is question 6?", answer:"const")
+questionFour = Question.create(level_id: levelTwo.id, question:"They accept arbitrary inputs called 'props' and return React elements describing what should appear on the screen", answer:"components")
+questionFive = Question.create(level_id: levelTwo.id, question:"What are the following? GET, PATCH, POST, DELETE.", answer:"HTTP requests")
+questionSix = Question.create(level_id: levelTwo.id, question:"What transforms JSX & ES6 into Javascript?", answer:"Babel")
 
 # level 3 questions
 
-questionSeven = Question.create(level_id: levelThree.id, question:"What is question 7?", answer:"const")
-questionEight = Question.create(level_id: levelThree.id, question:"What is question 8?", answer:"const")
-questionNine = Question.create(level_id: levelThree.id, question:"What is question 9?", answer:"const")
+questionSeven = Question.create(level_id: levelThree.id, question:"What updates a controlled component?", answer:"React")
+questionEight = Question.create(level_id: levelThree.id, question:"true or false? In JSX, you can identify a class using 'className'?", answer:"true")
+questionNine = Question.create(level_id: levelThree.id, question:"Components begin with a ___ letter?", answer:"capital")
 
 
 # level 4 question
-questionTen = Question.create(level_id: levelFour.id, question:"What is question 10?", answer:"const")
-questionEleven = Question.create(level_id: levelFour.id, question:"What is question 11?", answer:"const")
-questionTwelve = Question.create(level_id: levelFour.id, question:"What is question 12?", answer:"const")
+questionTen = Question.create(level_id: levelFour.id, question:"What do we call a function that gets called in response to an event?", answer:"event handler")
+questionEleven = Question.create(level_id: levelFour.id, question:"What do we use to store information that the component itself can change?", answer:"state")
+questionTwelve = Question.create(level_id: levelFour.id, question:"What do we use to store information that can only be changed by a different component?", answer:"props")
 
 
 #level 5 quesitons
 
-questionThirteen = Question.create(level_id: levelFive.id, question:"What is question 13?", answer:"const")
-questionFourteen = Question.create(level_id: levelFive.id, question:"What is question 14?", answer:"const")
-questionFifteen = Question.create(level_id: levelFive.id, question:"What is question 15?", answer:"const")
+questionThirteen = Question.create(level_id: levelFive.id, question:"What Ruby method returns a new array containing all elements of array for which the given block returns a true value?", answer:".select")
+questionFourteen = Question.create(level_id: levelFive.id, question:"What Ruby method returns a new array with one of each element, no duplicates?", answer:".uniq")
+questionFifteen = Question.create(level_id: levelFive.id, question:"What Ruby method checks to see if an object is found in array and returns true or false?", answer:".include?")
 
 # monsters
 
