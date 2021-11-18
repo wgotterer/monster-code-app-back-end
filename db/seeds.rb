@@ -30,7 +30,7 @@ levelFour = Level.create(name:"Level Four")
 levelFive = Level.create(name:"Level Five")
 
 # users
-userOne = User.create(name:"The First", avatar_id: wizard.id, level_id: levelOne.id)
+# userOne = User.create(name:"The First", avatar_id: wizard.id, level_id: levelOne.id)
 
 # level one questions
 questionOne = Question.create(level_id: levelOne.id, question:"What variable cannot be reassigned in javaScript?", answer:"const")
@@ -40,12 +40,12 @@ questionThree = Question.create(level_id: levelOne.id, question:"What is the DOM
 # level 2 questions
 
 questionFour = Question.create(level_id: levelTwo.id, question:"They accept arbitrary inputs called 'props' and return React elements describing what should appear on the screen", answer:"components")
-questionFive = Question.create(level_id: levelTwo.id, question:"What are the following? GET, PATCH, POST, DELETE.", answer:"HTTP requests")
-questionSix = Question.create(level_id: levelTwo.id, question:"What transforms JSX & ES6 into Javascript?", answer:"Babel")
+questionFive = Question.create(level_id: levelTwo.id, question:"What are the following? GET, PATCH, POST, DELETE.", answer:"http requests")
+questionSix = Question.create(level_id: levelTwo.id, question:"What transforms JSX & ES6 into Javascript?", answer:"babel")
 
 # level 3 questions
 
-questionSeven = Question.create(level_id: levelThree.id, question:"What updates a controlled component?", answer:"React")
+questionSeven = Question.create(level_id: levelThree.id, question:"true or false? We should update state directly?", answer:"false")
 questionEight = Question.create(level_id: levelThree.id, question:"true or false? In JSX, you can identify a class using 'className'?", answer:"true")
 questionNine = Question.create(level_id: levelThree.id, question:"Components begin with a ___ letter?", answer:"capital")
 
