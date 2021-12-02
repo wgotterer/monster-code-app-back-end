@@ -13,3 +13,15 @@ use Rack::JSONBodyParser
 
 # Our application
 run ApplicationController
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: development
+  pool: 2
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: <%= ENV['DATABASE_HOST'] %>
+  databse: production 
